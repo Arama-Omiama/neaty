@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+body {
+ /* background: pink;*/
+ color: #373a3c;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== sidebar styling start ===== */
+
+.sidebar {
+  width: 30%;
+  height: 100vh;
+  background: #316699;
+  float: left;
+  color: white;
+  text-align: center;
+  position: fixed;
+}
+
+.sidebar-header{
+    margin: 35px 0px;
+}
+
+.sidebar-header h1 {
+    font-weight: 100;
+    font-size:  38px;
+    text-transform: capitalize;
+
+}
+
+.sidebar-body-list{
+    list-style-type: none;
+}
+.sidebar-body-list li{
+    margin-bottom: 35px;
+}
+
+.sidebar-body-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.sidebar-body-list li a:hover {
+    color: #f4ef5e;
+}
+
+/* ===== sidebar styling end ===== */
+
+/* ===== content-header styling start ===== */
+
+/*
+.content {
+  background: black;
+
+} */
+
+.content {
+    margin-left: 30%;
+}
+
+.content .content-header > img {
+    width: 100%;
+}
+
+/* ===== .content-header styling end ===== */
+
+/* ===== content-welcome styling start ===== */
+
+.content-welcome {
+    margin: 50px 50px 70px ;
+}
+
+.content-welcome h2 {
+    font-weight: 400;
+    color: #316699;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.content-welcome p {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 20px;
+}
+/* ===== content-welcome styling end ===== */
+
+/* ===== content-abouts-us styling start ===== */
+.content-about {
+    margin: 50px 50px 70px ;
+}
+
+.content-about-img {
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+}
+
+.content-about-img > img{
+    width: 100%;
+}
+
+.content-about-info h3 {
+    font-weight: 400;
+    color: #316699;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.content-about-info p {
+    line-height: 2;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+ 
+.content-about-info a {
+    margin-left: 270px;
+    text-decoration: none;
+    background-color: #316699;
+    color: white;
+    padding: 20px 60px;
+    font-weight: 300;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.content-about-info a:hover{
+    background-color: #2790c6;
+}
+
+/* ===== content-abouts-us styling end ===== */
+
+/* ===== content-first-gallery styling start ===== */
+.first-gallery{
+    margin: 50px 50px 70px ;
+}
+
+.first-gallery h3{
+    font-weight: 400;
+    color: #316699;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.first-gallery .first-gallery-column{
+    float: left;
+    width: 20%;
+    padding: 5px;
+
+}
+
+.first-gallery .first-gallery-column img{
+    width: 100%;
+}
+/* ===== content-first-gallery styling end ===== */
+
+/* ===== content-second-gallery styling start ===== */
+.second-gallery{
+    margin: 50px 50px 70px;
+}
+
+.second-gallery h3{
+    font-weight: 400;
+    color: #316699;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.second-gallery .second-gallery-column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.second-gallery .second-gallery-column img{
+    width: 100%;
+}
+/* ===== content-second-gallery styling end ===== */
+
+/* ===== content-third-gallery styling start ===== */
+.third-gallery{
+    margin: 50px 50px 70px;
+}
+
+.third-gallery h3{
+    font-weight: 400;
+    color: #316699;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.third-gallery .third-gallery-column{
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.third-gallery .third-gallery-column img{
+    width: 100%;
+}
+/* ===== content-third-gallery styling end ===== */
+
+/* ===== content-contact styling start ===== */
+.content-contact{
+    margin: 50px 50px 70px;
+    /*background-color: red;*/
+}
+
+.content-contact h3 {
+    font-weight: 400;
+    color: #316699;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.contact-form{
+    float: left;
+    width: 50%;
+    margin-right: 30px;
+    /*background: green;*/
+}
+
+.contact-form input {
+    height: 45px;
+}
+
+.contact-form .form-group{
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #0a6697;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #55595c ;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #2486ab;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #66aFe9;
+} 
+
+.form-group button{
+    color: white;
+    background: #006599;
+    border: 0;
+    padding: 18px 35px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.form-group button:hover{
+    background-color: #2790c6;
+    cursor: pointer;
+}
+
+.contact-info p{
+    margin-bottom: 14px;
+}
+.contact-info p,
+.contact-info address{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2;
+}
+/* ===== content-contact styling end ===== */
+
+/* ===== footer styling start ===== */
+.footer{
+    margin: 50px 50px 30px;
+}
+
+.footer p{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.footer p a{
+    text-decoration: none;
+    color: #0275d8;
+}
+
+.footer p a:hover{
+    color: #014c8c;
+}
+/* ===== footer styling end ===== */
+
+
+
+
+
